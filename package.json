@@ -1,0 +1,23 @@
+{
+  "name": "appium-trust-wallet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wdio.conf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/levselickiy/appium-trust-wallet.git"
+  },
+  "private": true,
+  "dependencies": {
+    "@wdio/globals": "^9.17.0"
+  },
+  "devDependencies": {
+    "appium": "^3.0.1",
+    "appium-uiautomator2-driver": "^5.0.0",
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2"
+  }
+}
