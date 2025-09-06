@@ -4,10 +4,7 @@ This project contains UI automation tests for the TrustWallet Android applicatio
 
 ## Demo Video
 Watch a demo of the test execution:
-<video controls>
-  <source src="https://streamable.com/s/d4i4c1" type="video/mp4">
-</video>
-
+[Screen_recording_final.webm](https://github.com/user-attachments/assets/53a8fb80-34a8-4284-acb5-a42960829006)
 
 ## Prerequisites
 - **Node.js**: v18 or higher
