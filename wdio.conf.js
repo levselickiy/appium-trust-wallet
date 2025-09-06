@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 exports.config = {
     runner: 'local',
@@ -21,4 +21,4 @@ exports.config = {
         command: './node_modules/.bin/appium', // или './node_modules/.bin/appium'
     }]],
     reporters: ['spec'],
-};
+}
