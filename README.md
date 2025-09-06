@@ -3,7 +3,10 @@
 This project contains UI automation tests for the TrustWallet Android application using WebDriverIO, Appium, and Mocha.
 
 ## Demo Video
-Watch a demo of the test execution:  [Screen_recording_final.webm](https://github.com/user-attachments/assets/02e28f89-6141-40db-bc99-da0a530d9600)
+Watch a demo of the test execution:
+<video controls>
+  <source src="https://streamable.com/s/d4i4c1" type="video/mp4">
+</video>
 
 
 ## Prerequisites
