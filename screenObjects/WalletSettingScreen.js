@@ -3,6 +3,7 @@ import { BaseScreen } from './BaseScreen'
 import { expect } from 'chai'
 
 export class WalletSettingScreen extends BaseScreen {
+    get
     get manualBackUpNowButton() {
         return $('(//android.widget.TextView[@resource-id="itemValue"])[2]')
     }

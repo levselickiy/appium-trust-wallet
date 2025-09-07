@@ -9,9 +9,20 @@ export class CreateWalletScreen extends BaseScreen {
     get pinCodeConfirmText() { return $('android=new UiSelector().textContains("Re-enter your passcode. ")') }
     get skipNotificationButton() { return $('//android.widget.TextView[@resource-id="secondaryAction"]') }
     get walletReadyText() { return $('android=new UiSelector().textContains("Brilliant, your wallet is ready!")') }
+    get enableNotificationButton() { return $('') }
+    get passCodeError() {return $('')}
+    get systemNotificatationPopUp() { return $('{}')}
 
+
+    async clickOnEnableNotification() {
+        await this.waitForClickableAndClick(this.enableNotificationButton)
+    }
     async clickOnSkipButton() {
         await this.waitForClickableAndClick(this.skipButton)
+    }
+
+    async verifyPassCodeError() {
+        await this.passCodeError.waitForDisplayed({timeout: 5000})
     }
 
     async verifyWalletReadyText(){
@@ -31,14 +42,26 @@ export class CreateWalletScreen extends BaseScreen {
     }
 
     async createWallet(pin) {
-        await this.waitForClickableAndClick(this.createWalletButton)
+        await this.clickOnCreateWalletButton()
         await this.verifyPinCodeText()
         await this.enterPinCode(pin)
         await this.verifyPinCodeConfirmText()
         await this.enterPinCode(pin)
-        await this.waitForClickableAndClick(this.skipNotificationButton)
+        await this.clickOnSkipNotificationButton()
         await this.verifyWalletReadyText()
         await this.clickOnSkipButton()
+    }
+
+    async clickOnSkipNotificationButton(){
+        await this.waitForClickableAndClick(this.createWalletButton)
+    }
+
+    async clickOnEnableNotificationButton(){
+        await this.waitForClickableAndClick(this.enableNotificationButton)
+    }
+
+    async clickOnCreateWalletButton(){
+        await this.waitForClickableAndClick(this.createWalletButton)
     }
 
     async enterPinCode(pin) {
