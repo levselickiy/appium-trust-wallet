@@ -31,8 +31,13 @@ Watch a demo of the test execution:
    ```
 
 4. **Set up TrustWallet APK**:
+- Create a directory apk in the project root
+```bash
+    mkdir apk
+   ```
    - Download the APK from [trustwallet.com](https://trustwallet.com/).
    - Update `wdio.conf.js` with the path to the APK in `capabilities.app`.
+
 
 5. **Start Appium server**:
    ```bash
