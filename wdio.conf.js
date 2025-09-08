@@ -18,7 +18,7 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: { ui: 'bdd', timeout: 60000, retries: 0 },
     services: [['appium', {
-        command: './node_modules/.bin/appium', // или './node_modules/.bin/appium'
+        command: './node_modules/.bin/appium',
     }]],
     reporters: ['spec'],
 }

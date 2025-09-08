@@ -1,4 +1,4 @@
-import { browser, $ } from '@wdio/globals'
+import { $ } from '@wdio/globals'
 import { BaseScreen } from './BaseScreen'
 
 export class CreateWalletScreen extends BaseScreen {
@@ -53,7 +53,7 @@ export class CreateWalletScreen extends BaseScreen {
     }
 
     async clickOnSkipNotificationButton(){
-        await this.waitForClickableAndClick(this.createWalletButton)
+        await this.waitForClickableAndClick(this.skipNotificationButton)
     }
 
     async clickOnEnableNotificationButton(){
