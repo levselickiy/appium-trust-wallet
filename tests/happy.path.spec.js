@@ -9,10 +9,9 @@ it.only('Happy path - Create new wallet and confirm the seed phrase', async () =
     await createWalletScreen.createWallet(pinCode)
 
     await homeScreen.isMainWalletDisplayed(walletName)
-    await homeScreen.isMainWalletDisplayed(walletName)
     await homeScreen.clickOnMainWallet()
 
-    await homeScreen.selectWallet()
+    await homeScreen.clickOnSetUpWallet()
     await walletSettingsScreen.openManualBackup()
 
     await walletSettingsScreen.verifyOpenedSecretPhrasePage()

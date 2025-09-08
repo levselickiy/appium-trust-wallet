@@ -10,7 +10,7 @@ export class HomeScreen extends BaseScreen {
         await this.mainWalletName(walletName).waitForDisplayed({ timeout: 10000 })
     }
 
-    async selectWallet() {
+    async clickOnSetUpWallet() {
         await this.waitForClickableAndClick(this.walletSelect)
     }
 
