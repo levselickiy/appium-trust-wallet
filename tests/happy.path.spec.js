@@ -24,6 +24,4 @@ it.only('Happy path - Create new wallet and confirm the seed phrase', async () =
     await walletSettingsScreen.clickOnContinueConfirmButton()
 
     await walletSettingsScreen.verifyWalletBackupCompleted()
-
-    await walletSettingsScreen.verifyWalletBackupCompleted()
 })
